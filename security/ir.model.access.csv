@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_pos_bom_auto_stock_move_pos_bom_auto_stock_move,pos_bom_auto_stock_move.pos_bom_auto_stock_move,model_pos_bom_auto_stock_move_pos_bom_auto_stock_move,base.group_user,1,1,1,1
+access_pos_bom_auto_mo_user,pos_bom_auto_mo_user,model_mrp_production,,1,1,1,0
