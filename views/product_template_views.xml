@@ -3,16 +3,18 @@
     <record id="view_product_template_form_inherit_auto_bom" model="ir.ui.view">
         <field name="name">product.template.form.pos.bom.auto</field>
         <field name="model">product.template</field>
-        <field name="inherit_id" ref="point_of_sale.product_template_form_view_pos" />
+        <field name="inherit_id" ref="product.product_template_form_view" />
         <field name="arch" type="xml">
-            
+
             <!-- On ajoute notre champ dans l'onglet POS existant -->
-            <xpath expr="//page[@name='pos']" position="inside">
-                <group string="Déduction automatique BOM">
-                    <field name="auto_bom_in_pos"/>
-                    <label for="auto_bom_in_pos" string="Activer la déduction automatique des composants lors de la vente POS" />
-                </group>
+            <xpath expr="//sheet/notebook" position="inside">
+                <page string="Point de Vente">
+                    <group string="Déduction automatique BOM">
+                        <field name="auto_bom_in_pos" />
+                    </group>
+                </page>
             </xpath>
+
 
         </field>
     </record>
